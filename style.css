@@ -1,0 +1,281 @@
+#hero {
+    background-color: #DAC0A3;
+}
+
+.heading {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F8F0E5;
+    text-align: center;
+}
+
+.heading > h1 {
+    font-size: 100px;
+    font-family: 'Source Serif 4', serif;
+    margin-bottom: 30px;
+}
+
+.heading > h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.logo-img {
+    position: absolute;
+    top: 10px;
+    color:  #F8F0E5;
+}
+
+.logo {
+    height: 50px;
+}
+
+#presentation {
+    background-color: #F8F0E5;
+}
+
+.contain {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   gap: 50px;
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+
+.container1 {
+    background-color: black;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.Alberto {
+    height: 300px;
+    width: auto;
+    object-fit: cover;
+}
+
+.container2 {
+    max-width: 525px;
+    border-bottom: solid 1px #102C57;
+}
+
+.container2 > h1 {
+    font-family: 'Source Serif 4', serif;
+    margin-bottom: 20px;
+    color: #102C57;
+}
+
+.container2 > p {
+    font-family: 'Montserrat', sans-serif;
+    color: #102C57;
+}
+
+.about-me{
+    padding: 0px 50px 50px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.school {
+    grid-area: 2 / 1 / 3 / 2;
+    max-width: 500px;
+}
+
+.work {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.skills {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.emojis {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.about-me > div > h1 {
+    font-family: 'Source Serif 4', serif ;
+    color: #102C57;
+    font-size: 65px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.about-me h2 {
+    font-family:'Source Serif 4', serif ;
+    color: #102C57;
+    margin-bottom: 30px;
+}
+
+.about-me > div > ul {
+    font-family: 'Montserrat', sans-serif ;
+    color: #102C57;
+}
+
+ul {
+    list-style: circle;
+}
+
+
+
+#projects {
+    padding: 50px 50px 50px 50px;
+    background-color: #F8F0E5;
+}
+
+#projects > .progetti {
+    font-family: 'Source Serif 4', serif;
+    color: #102C57;
+    margin-bottom: 50px;
+    border-bottom: solid 1px #102C57;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.progetti > h1 {
+    font-size: 65px;
+}
+
+.my-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.my-projects > div {
+    height: 400px;
+    width: 350px;
+    border-radius: 5%;
+    border: solid 2px #102C57;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Source Serif 4', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: space-between;
+    color: #102C57;
+    background-color: white;
+}
+
+.my-projects img {
+    height: 300px;
+    width: 400px;
+}
+
+.my-projects > div > h3 {
+    border-top: solid 2px #102C57;
+    padding: 25px;
+}
+
+#contatti {
+    background-color: #DAC0A3;
+    color: #F8F0E5;
+}
+
+.contacts {
+    padding: 50px 50px 0px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contacts > h2 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 45px;
+}
+
+.contacts > h5 {
+    font-family: 'Montserrat', sans-serif ;
+}
+
+.links > a {
+    color: #F8F0E5;
+    font-family: 'Montserrat', sans-serif ;
+    padding: 25px;
+}
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    width: 100vw;
+    padding-left: 25px;
+    font-size: 10px;
+} 
+
+@media (max-width: 700px) {
+
+    .container2 {
+        max-width: 400px;
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 25px;
+    }
+
+    .school {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        order: 2;
+        max-width: none;
+    }
+
+    .skills {
+        order: 4;
+    }
+
+    .emojis {
+        order: 1 ;
+    }
+
+    .work {
+        order: 3;
+    }
+
+    h1 > svg {
+        height: 65px;
+        width: 65px;
+    }
+
+    .my-projects > div {
+        margin: 15px;
+    }
+
+    .progetti {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contatti {
+        text-align: center;
+    }
+}
